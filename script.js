@@ -42,14 +42,14 @@ function intentar(){
         return;
     }
     for (const index in palabra ) {
-        let aux = 0;
+        
         const SPAN = document.createElement('div');
         SPAN.className = "letter"
 
         if(intento[index] === palabra[index]  ){
             SPAN.innerHTML = intento[index];
             SPAN.style.background = "green";
-            aux += 1;
+            
         }else if( palabra.includes(intento[index])){
             SPAN.innerHTML = intento[index];
             SPAN.style.background = "yellow";
